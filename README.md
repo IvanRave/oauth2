@@ -18,22 +18,28 @@ Get auth code (GET)
 </tr>
 <tr>
 <td>
+
 * client_id=APP_ID
 * redirect_uri=REDIRECT_URI
 * scope=PERMISSIONS
 * response_type=code
+
 </td>
 <td>
+
 * client_id=APP_ID
 * redirect_uri=REDIRECT_URI
 * scope=PERMISSIONS
 * response_type=code
+
 </td>
 <td>
+
 * client_id=APP_ID
 * redirect_uri=REDIRECT_URI
 * scope=PERMISSIONS
 * response_type=code
-* v=API_VERSION 
+* v=API_VERSION
+
 </td>
 </table>
