@@ -128,7 +128,6 @@ OAuth 2.0
     <ul>
       <li>user_ids=USER_IDS</li>
       <li>fields=FIEDS</li>
-      <li>name_case=NAME_CASE</li>
     </ul>
   </td>
   <td>
