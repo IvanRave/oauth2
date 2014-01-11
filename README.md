@@ -3,13 +3,13 @@ oauth2
 
 OAuth 2.0
 
-Get auth code (GET)
+##Get auth code (GET)
 
 <table>
 <tr>
-<td>VK</td>
-<td>MailRu</td>
-<td>Odnoklassniki</td>
+  <td>VK</td>
+  <td>MailRu</td>
+  <td>Odnoklassniki</td>
 </tr>
 <tr>
 <td>https://oauth.vk.com/authorize</td>
@@ -42,4 +42,116 @@ Get auth code (GET)
   <li>v=API_VERSION</li>
 </ul>
 </td>
+</table>
+
+## Change code to access token (POST or GET)
+
+<table>
+<tr>
+  <td>VK</td>
+  <td>MailRu</td>
+  <td>Odnoklassniki</td>
+</tr>
+<tr>
+  <td>https://oauth.vk.com/access_token</td>
+  <td>https://connect.mail.ru/oauth/token</td>
+  <td>http://api.odnoklassniki.ru/oauth/token.do</td>
+</tr>
+<tr>
+  <td>
+    <ul>
+      <li>client_id=APP_ID</li>
+      <li>client_secret=CLIENT_SECRET</li>
+      <li>code=CODE</li>
+      <li>redirect_uri=REDIRECT_URI</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>client_id=APP_ID</li>
+      <li>client_secret=CLIENT_SECRET</li>
+      <li>code=CODE</li>
+      <li>redirect_uri=REDIRECT_URI</li>
+      <li>grant_type=authorization_code</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>client_id=APP_ID</li>
+      <li>client_secret=CLIENT_SECRET</li>
+      <li>code=CODE</li>
+      <li>redirect_uri=REDIRECT_URI</li>
+      <li>grant_type=authorization_code</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td>
+    <ul>
+      <li>access_token=ACCESS_TOKEN</li>
+      <li>expires_in=EXPIRES_IN</li>
+      <li>user_id=USER_ID</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>access_token=ACCESS_TOKEN</li>
+      <li>expires_in=EXPIRES_IN</li>
+      <li>x_mailru_vid=USER_ID</li>
+      <li>refresh_token=REFRESH_TOKEN</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>access_token=ACCESS_TOKEN</li>
+      <li>token_type=session</li>
+      <li>refresh_token=REFRESH_TOKEN</li>
+    </ul>
+  </td>
+</tr>
+</table>
+
+## Get user data using access token
+<table>
+<tr>
+  <td>VK</td>
+  <td>MailRu</td>
+  <td>Odnoklassniki</td>
+</tr>
+<tr>
+  <td>https://api.vk.com/method/users.get</td>
+  <td>http://www.appsmail.ru/platform/api</td>
+  <td>http://api.odnoklassniki.ru/users/getInfo</td>
+</tr>
+<tr>
+  <td>
+    <ul>
+      <li>user_ids=USER_IDS</li>
+      <li>fields=FIEDS</li>
+      <li>name_case=NAME_CASE</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>method=users.getInfo</li>
+      <li>app_id=APP_ID</li>
+      <li>sig=SIG</li>
+      <li>uid=CURRENT_UID</li>
+      <li>uids=UIDS_FOR_INFO</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>application_key=APP_KEY</li>
+      <li>sig=SIG</li>
+      <li>uids=UIDS</li>
+      <li>fields=FIELDS</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td>http://vk.com/dev/users.get</td>
+  <td>http://api.mail.ru/docs/reference/rest/users.getInfo</td>
+  <td>http://apiok.ru/wiki/display/api/users.getInfo</td>
+</tr>
 </table>
