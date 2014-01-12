@@ -23,23 +23,23 @@ OAuth 2.0
   <li>redirect_uri=REDIRECT_URI</li>
   <li>scope=PERMISSIONS</li>
   <li>response_type=code</li>
-</ul>
-</td>
-<td>
-<ul>
-  <li>client_id=APP_ID</li>
-  <li>redirect_uri=REDIRECT_URI</li>
-  <li>scope=PERMISSIONS</li>
-  <li>response_type=code</li>
-</ul>
-</td>
-<td>
-<ul>
-  <li>client_id=APP_ID</li>
-  <li>redirect_uri=REDIRECT_URI</li>
-  <li>scope=PERMISSIONS</li>
-  <li>response_type=code</li>
   <li>v=API_VERSION</li>
+</ul>
+</td>
+<td>
+<ul>
+  <li>client_id=APP_ID</li>
+  <li>redirect_uri=REDIRECT_URI</li>
+  <li>scope=PERMISSIONS</li>
+  <li>response_type=code</li>
+</ul>
+</td>
+<td>
+<ul>
+  <li>client_id=APP_ID</li>
+  <li>redirect_uri=REDIRECT_URI</li>
+  <li>scope=PERMISSIONS</li>
+  <li>response_type=code</li>
 </ul>
 </td>
 </table>
@@ -55,7 +55,7 @@ OAuth 2.0
 <tr>
   <td>GET: https://oauth.vk.com/access_token</td>
   <td>POST: https://connect.mail.ru/oauth/token</td>
-  <td>POST: http//api.odnoklassniki.ru/oauth/token.do</td>
+  <td>POST: https://api.odnoklassniki.ru/oauth/token.do</td>
 </tr>
 <tr>
   <td>
@@ -121,7 +121,7 @@ OAuth 2.0
 </tr>
 <tr>
   <td>https://api.vk.com/method/users.get</td>
-  <td>http://www.appsmail.ru/platform/api</td>
+  <td>https://www.appsmail.ru/platform/api</td>
   <td>https://api.odnoklassniki.ru/users/getInfo</td>
 </tr>
 <tr>
