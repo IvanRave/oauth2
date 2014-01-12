@@ -122,7 +122,7 @@ OAuth 2.0
 <tr>
   <td>https://api.vk.com/method/users.get</td>
   <td>https://www.appsmail.ru/platform/api</td>
-  <td>https://api.odnoklassniki.ru/users/getInfo</td>
+  <td>https://api.odnoklassniki.ru/fb.do</td>
 </tr>
 <tr>
   <td>
@@ -143,10 +143,11 @@ OAuth 2.0
   </td>
   <td>
     <ul>
-      <li>application_key=APP_KEY</li>
-      <li>sig=SIG</li>
-      <li>uids=UIDS</li>
+      <li>method=users.getCurrentUser</li>
+      <li>application_key=PUBLIC_KEY</li>
       <li>fields=FIELDS</li>
+      <li>access_token=ACCESS_TOKEN</li>
+      <li>sig=SIG</li>
     </ul>
   </td>
 </tr>
