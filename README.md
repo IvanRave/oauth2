@@ -122,7 +122,7 @@ OAuth 2.0
 <tr>
   <td>https://api.vk.com/method/users.get</td>
   <td>https://www.appsmail.ru/platform/api</td>
-  <td>https://api.odnoklassniki.ru/fb.do</td>
+  <td>http://api.odnoklassniki.ru/fb.do</td>
 </tr>
 <tr>
   <td>
