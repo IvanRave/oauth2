@@ -44,7 +44,7 @@ OAuth 2.0
 </td>
 </table>
 
-## Change code to access token (POST or GET)
+## Change code to access token (GET or POST)
 
 <table>
 <tr>
@@ -111,7 +111,7 @@ OAuth 2.0
 </tr>
 </table>
 
-## Get user data using access token
+## Get user data using access token (GET or POST)
 <table>
 <tr>
   <td>VK</td>
@@ -135,6 +135,7 @@ OAuth 2.0
       <li>method=users.getInfo</li>
       <li>app_id=APP_ID</li>
       <li>sig=SIG</li>
+      <li>secure=1</li>
       <li>uid=CURRENT_UID</li>
       <li>uids=UIDS_FOR_INFO</li>
     </ul>
