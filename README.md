@@ -44,7 +44,7 @@ OAuth 2.0
 </td>
 </table>
 
-## Change code to access token (GET or POST)
+## Change code to access token
 
 <table>
 <tr>
@@ -53,9 +53,9 @@ OAuth 2.0
   <td>Odnoklassniki</td>
 </tr>
 <tr>
-  <td>https://oauth.vk.com/access_token</td>
-  <td>https://connect.mail.ru/oauth/token</td>
-  <td>http://api.odnoklassniki.ru/oauth/token.do</td>
+  <td>GET: https://oauth.vk.com/access_token</td>
+  <td>POST: https://connect.mail.ru/oauth/token</td>
+  <td>POST: http//api.odnoklassniki.ru/oauth/token.do</td>
 </tr>
 <tr>
   <td>
@@ -112,6 +112,7 @@ OAuth 2.0
 </table>
 
 ## Get user data using access token (GET or POST)
+
 <table>
 <tr>
   <td>VK</td>
@@ -121,7 +122,7 @@ OAuth 2.0
 <tr>
   <td>https://api.vk.com/method/users.get</td>
   <td>http://www.appsmail.ru/platform/api</td>
-  <td>http://api.odnoklassniki.ru/users/getInfo</td>
+  <td>https://api.odnoklassniki.ru/users/getInfo</td>
 </tr>
 <tr>
   <td>
