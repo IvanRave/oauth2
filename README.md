@@ -1,9 +1,19 @@
 oauth2
 ======
 
-OAuth 2.0
+Auth modules for ASP.NET MVC5 OWIN projects
 
-##Get auth code (GET)
+Use next methods:
+
+- app.UseVkontakteAuthentication(appId, secretKey);
+
+- app.UseMailRuAuthentication(appId, secretKey);
+
+- app.UseOdnoklassnikiAuthentication(appId, secretKey, publicKey);
+
+##Steps
+
+###Get auth code (GET)
 
 <table>
 <tr>
@@ -44,7 +54,7 @@ OAuth 2.0
 </td>
 </table>
 
-## Change code to access token
+### Change code to access token
 
 <table>
 <tr>
@@ -111,7 +121,7 @@ OAuth 2.0
 </tr>
 </table>
 
-## Get user data using access token (GET or POST)
+### Get user data using access token (GET or POST)
 
 <table>
 <tr>
