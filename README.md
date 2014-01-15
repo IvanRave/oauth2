@@ -9,7 +9,20 @@ Use next methods:
 
 - app.UseMailRuAuthentication(appId, secretKey);
 
-- app.UseOdnoklassnikiAuthentication(appId, secretKey, publicKey);
+- app.UseOdnoklassnikiAuthentication(appId, secretKey, publicKey); 
+
+- app.UseYandexAuthentication(appId, appPassword);
+
+- app.UseLinkedInAuthentication(appId, appSecret);
+ 
+
+##App registration links:
+
+- http://vk.com/editapp?act=create
+- http://api.mail.ru/sites/my/add/
+- http://www.odnoklassniki.ru/devaccess
+- https://oauth.yandex.ru/client/new
+- https://www.linkedin.com/secure/developer
 
 ##Steps
 
